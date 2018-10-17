@@ -1,0 +1,80 @@
+/*!
+ * Customize file of (Bootstrap Jalali Calendar) (http://haidari.co)
+ * Copyright 2018
+ * Author: Rafi Haidari
+ */
+
+ @font-face { 
+     font-family: 'fontFarsi'; 
+    src: url('../fonts/BRoya.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ 
+    src: url('../fonts/BRoya.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */ 
+}
+
+.farsi-font{
+    font-family: 'fontFarsi';
+}
+.jumbotron p{
+    font-weight: 700;
+    font-size: 20px;
+    direction: rtl
+}
+
+.form-control,.btn{
+    border-radius: 0;
+}
+.farsi-input{
+    font-weight: 700;
+    direction: rtl;
+    text-align: center;
+}
+.btn-primary.focus, .btn-primary:focus, .form-control:focus{
+    box-shadow: none;
+}
+div.calendar > table{
+    font-family: 'fontFarsi';
+    font-size: 16px;
+}
+.calendar .button{
+    display: table-cell;
+    flex-wrap: inherit;
+}
+#flat_calendar_1 {
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.calendar thead .headrow {
+    background: #138496 !important;
+}
+
+.calendar .nav {
+    background: #138496 url(calender/menuarrow.gif) no-repeat 100% 100% !important;
+}
+
+.calendar thead .hilite { /* How do the buttons in header appear when hover */
+    background-color: #138496 !important;
+    color: #000;
+    border: 1px solid #0e626f !important;
+  }
+  .calendar, .calendar table {
+    border: 1px solid #138496 !important;
+  }
+  .calendar tbody td.selected {
+    border: 1px solid #0e626f !important;
+    background: #138496 !important;
+    color: #fff !important;
+}
+.calendar tbody td.today {
+    color: #5f0505 !important;
+}
+
+@media (min-width: 576px){
+.jumbotron {
+    padding: 3rem 2rem;
+}
+}
+
+.copy-right{
+    text-align: left
+}
