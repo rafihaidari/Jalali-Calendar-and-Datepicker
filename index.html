@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,186 +9,194 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/customize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/calender/calendar-blue.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jalali.js"></script>
     <script src="assets/js/calendar.js"></script>
     <script src="assets/js/calendar-setup.js"></script>
-    <script src="../../lang/calendar-dari.js"></script>
+    <script src="lang/calendar-dari.js"></script>
     <style>
         .input-group{
             margin-bottom: 15px;
         }
     </style>
 </head>
+
 <body>
     <article class="container">
         <section class="jumbotron text-center">
             <p>Jalali <span class="badge badge-primary">Bootstrap v4.0.0</span> Calender/Datepicker</p>
             <p class="farsi-font">
-                   
-                        تقویم و DatePicker  هجری شمسی (جلالی) بر پایه 
-                        <span class="badge badge-primary">
-                            بوتسترپ ۴
-                        </span>
+
+                تقویم و DatePicker هجری شمسی (جلالی) بر پایه
+                <span class="badge badge-primary">
+                    بوتسترپ ۴
+                </span>
             </p>
             <hr>
             <p class="farsi-font">
                 پشتیبانی از زبان های
             </p>
-            <section class="text-left farsi-font" style="direction:rtl">
-             <span class="badge badge-warning">دری | افغانستان</span>
-             <span class="badge badge-danger">پشتو | افغانستان</span>
+            <section class="text-left farsi-font" style="direction:rtl;text-align: center !important">
+                <span class="badge badge-warning">دری | افغانستان</span>
+                <span class="badge badge-danger">پشتو | افغانستان</span>
 
-             <span class="badge badge-danger">فارسی | ایران</span>
+                <span class="badge badge-danger">فارسی | ایران</span>
 
-             <span class="badge badge-danger">Afrikaans</span>
-             <span class="badge badge-danger">Albanian</span>
-             <span class="badge badge-danger">Bulgarian</span>
-             <span class="badge badge-danger">Traditional Chinese</span>
-             <span class="badge badge-danger">Portuguese</span>
-             <span class="badge badge-danger">Germany</span>
-             <span class="badge badge-danger">Spanish</span>
-             <span class="badge badge-danger">Russian</span>
-             <span class="badge badge-danger">Turkish</span>
-             <span class="badge badge-danger">French</span>
-             <span class="badge badge-danger">Croatian</span>
-             <span class="badge badge-danger">Japanese</span>
-             <span class="badge badge-info">Other</span>
+                <span class="badge badge-danger">Afrikaans</span>
+                <span class="badge badge-danger">Albanian</span>
+                <span class="badge badge-danger">Bulgarian</span>
+                <span class="badge badge-danger">Traditional Chinese</span>
+                <span class="badge badge-danger">Portuguese</span>
+                <span class="badge badge-danger">Germany</span>
+                <span class="badge badge-danger">Spanish</span>
+                <span class="badge badge-danger">Russian</span>
+                <span class="badge badge-danger">Turkish</span>
+                <span class="badge badge-danger">French</span>
+                <span class="badge badge-danger">Croatian</span>
+                <span class="badge badge-danger">Japanese</span>
+                <span class="badge badge-info">Other</span>
 
             </section>
         </section>
 
         <article class="row col-11" style="margin:0 auto">
-            
-            
+
+
             <div class="col-12 col-sm-6 col-md-5 col-lg-6">
-                    <h2 class="display-5 farsi-font farsi-input">تاریخ هجری شمسی</h2>
-                    <br>
+                <h2 class="display-5 farsi-font farsi-input">تاریخ هجری شمسی</h2>
+                <br>
                 <div class="input-group">
                     <input id="date_input_one" type="text" class="form-control farsi-input farsi-font" placeholder="تاریخ شمسی">
                     <div class="input-group-btn">
                         <button id="date_btn_one" class="btn btn-info" type="submit">
-                        <i class="fa fa-calendar"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <script type="text/javascript">
-                Calendar.setup({
-                    inputField  : "date_input_one",   // id of the input field
-                    button      : "date_btn_one",   // trigger for the calendar (button ID)
-                        ifFormat    : "%Y/%m/%d",       // format of the input field
-                    dateType	: 'jalali',
-                    weekNumbers : true
-                });
-                </script>
-           
-
-                <div class="input-group">
-                    <input id="date_input_two" type="text" class="form-control farsi-input farsi-font" placeholder="تاریخ شمسی و ساعت قالب ۲۴ ساعته">
-                    <div class="input-group-btn">
-                        <button id="date_btn_two" class="btn btn-info" type="submit">
-                        <i class="fa fa-calendar"></i>
+                            <i class="fa fa-calendar"></i>
                         </button>
                     </div>
                 </div>
 
                 <script type="text/javascript">
                     Calendar.setup({
-                        inputField     :    "date_input_two",   // id of the input field
-                        button         :    "date_btn_two",   // trigger for the calendar (button ID)
-                           ifFormat       :    "%Y/%m/%d %H:%M",       // format of the input field
-                           showsTime      :    true,
-                        dateType	   :	'jalali',
-                        timeFormat     :    "24",
-                        weekNumbers    : false
+                        inputField: "date_input_one",   // id of the input field
+                        button: "date_btn_one",   // trigger for the calendar (button ID)
+                        ifFormat: "%Y/%m/%d",       // format of the input field
+                        dateType: 'jalali',
+                        weekNumbers: true
                     });
                 </script>
 
-<div class="input-group">
-        <input id="date_input_three" type="text" class="form-control farsi-input farsi-font" placeholder="تاریخ شمسی و ساعت قالب ۱۲ ساعته">
-        <div class="input-group-btn">
-            <button id="date_btn_three" class="btn btn-info" type="submit">
-            <i class="fa fa-calendar"></i>
-            </button>
-        </div>
-    </div>
 
-    <script type="text/javascript">
-        Calendar.setup({
-            inputField     :    "date_input_three",   // id of the input field
-            button         :    "date_btn_three",   // trigger for the calendar (button ID)
-               ifFormat       :    "%Y/%m/%d %I:%M %P",       // format of the input field
-               showsTime      :    true,
-            dateType	   :	'jalali',
-            timeFormat     :    "12",
-            weekNumbers    : false
-        });
-    </script>
+                <div class="input-group">
+                    <input id="date_input_two" type="text" class="form-control farsi-input farsi-font" placeholder="تاریخ شمسی و ساعت قالب ۲۴ ساعته">
+                    <div class="input-group-btn">
+                        <button id="date_btn_two" class="btn btn-info" type="submit">
+                            <i class="fa fa-calendar"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    Calendar.setup({
+                        inputField: "date_input_two",   // id of the input field
+                        button: "date_btn_two",   // trigger for the calendar (button ID)
+                        ifFormat: "%Y/%m/%d %H:%M",       // format of the input field
+                        showsTime: true,
+                        dateType: 'jalali',
+                        timeFormat: "24",
+                        weekNumbers: false
+                    });
+                </script>
+
+                <div class="input-group">
+                    <input id="date_input_three" type="text" class="form-control farsi-input farsi-font" placeholder="تاریخ شمسی و ساعت قالب ۱۲ ساعته">
+                    <div class="input-group-btn">
+                        <button id="date_btn_three" class="btn btn-info" type="submit">
+                            <i class="fa fa-calendar"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    Calendar.setup({
+                        inputField: "date_input_three",   // id of the input field
+                        button: "date_btn_three",   // trigger for the calendar (button ID)
+                        ifFormat: "%Y/%m/%d %I:%M %P",       // format of the input field
+                        showsTime: true,
+                        dateType: 'jalali',
+                        timeFormat: "12",
+                        weekNumbers: false
+                    });
+                </script>
 
 
-<div class="input-group">
-        <input id="date_input_four" type="text" class="form-control farsi-input farsi-font" placeholder="تاریخ شمسی با نام ماه و روز">
-        <div class="input-group-btn">
-            <button id="date_btn_four" class="btn btn-info" type="submit">
-            <i class="fa fa-calendar"></i>
-            </button>
-        </div>
-    </div>
+                <div class="input-group">
+                    <input id="date_input_four" type="text" class="form-control farsi-input farsi-font" placeholder="تاریخ شمسی با نام ماه و روز">
+                    <div class="input-group-btn">
+                        <button id="date_btn_four" class="btn btn-info" type="submit">
+                            <i class="fa fa-calendar"></i>
+                        </button>
+                    </div>
+                </div>
 
-    <script type="text/javascript">
-        Calendar.setup({
-            inputField  : "date_input_four",   // id of the input field
-            button      : "date_btn_four",   // trigger for the calendar (button ID)
-               ifFormat    : "%A, %e %B %Y",       // format of the input field
-            dateType	: 'jalali',
-            weekNumbers    : false
-        });
-    </script>
+                <script type="text/javascript">
+                    Calendar.setup({
+                        inputField: "date_input_four",   // id of the input field
+                        button: "date_btn_four",   // trigger for the calendar (button ID)
+                        ifFormat: "%A, %e %B %Y",       // format of the input field
+                        dateType: 'jalali',
+                        weekNumbers: false
+                    });
+                </script>
             </div>
 
             <div class="col-12 col-sm-6 col-md-5 col-lg-6">
-                    <h2 class="display-5 farsi-font farsi-input">
-                            تقویم هجری شمسی
-                    </h2>
+                <h2 class="display-5 farsi-font farsi-input">
+                    تقویم هجری شمسی
+                </h2>
 
-                 <span id="display_area_1" class="farsi-font badge badge-warning" style="font-size:15px">یک تاریخ را انتخاب کنید</span>
-                 <br>
-                            <form method="get" action="#">
-                            <input id="date_input_7" type="hidden" name="date" />
-                            </form>
+                <span id="display_area_1" class="farsi-font badge badge-warning" style="font-size:15px">یک تاریخ را
+                    انتخاب کنید</span>
 
-                            <div id="flat_calendar_1"></div>
+                <form method="get" action="#">
+                    <input id="date_input_7" type="hidden" name="date" />
+                </form>
 
-                            <script type="text/javascript">
-                                Calendar.setup({
-                                    inputField   : "date_input_7",
-                                    displayArea  : "display_area_1",
-                                    flat         : "flat_calendar_1",   // id of the input field
-                                    ifFormat     : "%Y-%m-%d",       // format of the input field
-                                    dateType	 : 'jalali',
-                                    weekNumbers  : false 
-                                });
-                            </script>
+                <div id="flat_calendar_1"></div>
+
+                <script type="text/javascript">
+                    Calendar.setup({
+                        inputField: "date_input_7",
+                        displayArea: "display_area_1",
+                        flat: "flat_calendar_1",   // id of the input field
+                        ifFormat: "%Y-%m-%d",       // format of the input field
+                        dateType: 'jalali',
+                        weekNumbers: false
+                    });
+                </script>
             </div>
-		
+
         </article>
-        
-        <article class="row">
-            <div class="col-12 copy-right">
-                    Copyright &copy; 2018 <a href="http://haidari.co" target="_blank">Rafi Haidari</a>    
-                    <p>Distributed under GNU GPL.</p>        
-                    <p>Based on The DHTML Calendar developed by Dynarch.com.</p>        
-            </div>
-        </article>
-       
-    </article>    
+
+    </article>
+
+    <hr>
 
     <footer>
-        
+        <article class="container-fluid">
+            <div class="col-12 copy-right">
+
+                <span class="badge badge-warning">
+                    Copyright &copy; 2018 <a href="http://haidari.co" target="_blank">Rafi Haidari</a></span>
+
+                <p class="display-6">Distributed under GNU GPL.
+                    <br>
+                    Based on The DHTML Calendar developed by <a href="http://dynarch.com" target="_blank">Dynarch.com</a>.</p>
+            </div>
+        </article>
     </footer>
 </body>
+
 </html>

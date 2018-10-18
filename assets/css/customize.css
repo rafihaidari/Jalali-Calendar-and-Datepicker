@@ -39,9 +39,15 @@ div.calendar > table{
     flex-wrap: inherit;
 }
 #flat_calendar_1 {
-    position: absolute;
-    right: 0;
-    top: 80px;
+    width: fit-content;
+    margin: 0 auto;
+}
+#display_area_1{
+    font-size: 15px;
+    margin: 0 auto;
+    display: table;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .calendar thead .headrow {
@@ -71,10 +77,11 @@ div.calendar > table{
 
 @media (min-width: 576px){
 .jumbotron {
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
 }
 }
 
 .copy-right{
-    text-align: left
+    text-align: center;
+    margin-top: 25px;
 }
