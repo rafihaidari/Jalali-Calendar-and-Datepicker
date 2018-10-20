@@ -1,5 +1,5 @@
-# Jalali-Calendar-and-Datepicker
-Jalali Bootstrap 4 Calendar/Datepicker | تقویم و دیت پیکر هجری شمسی (جلالی) بر پایه بوتسترپ ۴
+# Jalali Bootstrap Calendar and Datepicker v1.0
+تقویم و دیت پیکر هجری شمسی (جلالی) بر پایه بوتسترپ ۴
 <hr>
 <a href="http://haidari.co/jalali-bootstrap-calendar/">Demo</a>
 
