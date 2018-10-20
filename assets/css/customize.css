@@ -85,3 +85,9 @@ div.calendar > table{
     text-align: center;
     margin-top: 25px;
 }
+.githubButtons{
+    background: #dbe1e2;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+}
