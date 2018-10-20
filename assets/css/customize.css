@@ -55,7 +55,7 @@ div.calendar > table{
 }
 
 .calendar .nav {
-    background: #138496 url(calender/menuarrow.gif) no-repeat 100% 100% !important;
+    background: #138496 url(calendar/menuarrow.gif) no-repeat 100% 100% !important;
 }
 
 .calendar thead .hilite { /* How do the buttons in header appear when hover */
